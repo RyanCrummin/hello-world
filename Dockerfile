@@ -15,4 +15,4 @@ RUN npm run build
 # line 16 add another image to build base, the nginx web server
 FROM nginx:alpine
 # line 18 copy the buit application to the nginx root dir at /html
-COPY --from=build /app/dist/dockerlabtest/browser /usr/share/nginx/html
+COPY --from=build /app/dist/hello-world /usr/share/nginx/html
